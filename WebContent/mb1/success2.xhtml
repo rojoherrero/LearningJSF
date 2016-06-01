@@ -7,6 +7,18 @@
 	<title>Insert title here</title>
 </h:head>
 <h:body>
+	<h1>Your Data</h1>
+	<ul>
+		<li>Your name: #{planController2.employeeName}</li>
+		<li>Your ID: #{planController2.employeeId}</li>
+		<ul>
+			<li>Chosen Plan Name: #{planController2.healthPlan.name}</li>
+			<li>Chosen Plan Contact Phone:
+				#{planController2.healthPlan.contactPhone}</li>
+			<li>Chosen Plan Monthly Prime:
+				#{planController2.healthPlan.monthlyPremium}</li>
+		</ul>
+	</ul>
 
 </h:body>
 </html>
