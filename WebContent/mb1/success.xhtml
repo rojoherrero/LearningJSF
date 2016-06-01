@@ -7,19 +7,12 @@
 	<title>Insert title here</title>
 </h:head>
 <h:body>
-	<h:form>
-		<div>
-			<h:outputLabel>Type your name: </h:outputLabel>
-			<h:inputText value="#{inputYourData.firstName}" />
-		</div>
-		<div>
-			<h:outputLabel>Type your surname</h:outputLabel>
-			<h:inputText value="#{inputYourData.lastName}" />
-		</div>
-		<div>
-			<h:commandButton value="Send Information"
-				action="#{inputYourData.showName}"></h:commandButton>
-		</div>
-	</h:form>
+	<h1>Your Data</h1>
+	<ul>
+		<li>Your name: #{planController1.employeeName}</li>
+		<li>Your ID: #{planController1.employeeId}</li>
+		<li>Chosen Plan: #{planController1.healthPlanName}</li>
+	</ul>
+
 </h:body>
 </html>

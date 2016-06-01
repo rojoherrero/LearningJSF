@@ -1,27 +1,51 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <faces-config xmlns="http://xmlns.jcp.org/xml/ns/javaee"
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-facesconfig_2_2.xsd"
+	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee 
+						http://xmlns.jcp.org/xml/ns/javaee/web-facesconfig_2_2.xsd"
 	version="2.2">
+	<!-- Health Plan v2 -->
+	<managed-bean>
+		<managed-bean-name>planController2</managed-bean-name>
+		<managed-bean-class>org.rojoherrero.learnjsf.controller.mb1.HealthPlanController2</managed-bean-class>
+		<managed-bean-scope>request</managed-bean-scope>
+	</managed-bean>
+
+	<!-- Health Plan v1 -->
+	<managed-bean>
+		<managed-bean-name>planController1</managed-bean-name>
+		<managed-bean-class>org.rojoherrero.learnjsf.controller.mb1.HealthPlanController1</managed-bean-class>
+		<managed-bean-scope>request</managed-bean-scope>
+	</managed-bean>
+	<navigation-rule>
+		<from-view-id>/mb1/input-health-plan1.xhtml</from-view-id>
+		<navigation-case>
+			<from-outcome>valid</from-outcome>
+			<to-view-id>/mb1/success.xhtml</to-view-id>
+		</navigation-case>
+		<navigation-case>
+			<from-outcome>nonValid</from-outcome>
+			<to-view-id>/mb1/non-success.xhtml</to-view-id>
+		</navigation-case>
+	</navigation-rule>
 
 	<!-- Name registering configuration -->
 	<managed-bean>
-		<managed-bean-name>inputName</managed-bean-name>
+		<managed-bean-name>inputYourData</managed-bean-name>
 		<managed-bean-class>org.rojoherrero.learnjsf.controller.pb.NameController</managed-bean-class>
 		<managed-bean-scope>request</managed-bean-scope>
 	</managed-bean>
 	<navigation-rule>
-		<from-view-id>pb/name-input.xhtml</from-view-id>
+		<from-view-id>/pb/name-input.xhtml</from-view-id>
 		<navigation-case>
 			<from-outcome>goodInput</from-outcome>
-			<to-view-id>pb/name-output.xhtml</to-view-id>
+			<to-view-id>/pb/name-output.xhtml</to-view-id>
 		</navigation-case>
 		<navigation-case>
 			<from-outcome>badInput</from-outcome>
-			<to-view-id>pb/wrong-input.xhtml</to-view-id>
+			<to-view-id>/pb/wrong-input.xhtml</to-view-id>
 		</navigation-case>
 	</navigation-rule>
-
 
 	<!-- Flip Coin configuration -->
 	<managed-bean>
@@ -30,31 +54,31 @@
 		<managed-bean-scope>request</managed-bean-scope>
 	</managed-bean>
 	<navigation-rule>
-		<from-view-id>pb/*</from-view-id>
+		<from-view-id>/pb/*</from-view-id>
 		<navigation-case>
 			<from-outcome>stop</from-outcome>
-			<to-view-id>pb/defeat.xhtml</to-view-id>
+			<to-view-id>/pb/defeat.xhtml</to-view-id>
 		</navigation-case>
 	</navigation-rule>
 	<navigation-rule>
-		<from-view-id>pb/a.xhtml</from-view-id>
+		<from-view-id>/pb/a.xhtml</from-view-id>
 		<navigation-case>
 			<from-outcome>continue</from-outcome>
-			<to-view-id>pb/b.xhtml</to-view-id>
+			<to-view-id>/pb/b.xhtml</to-view-id>
 		</navigation-case>
 	</navigation-rule>
 	<navigation-rule>
-		<from-view-id>pb/b.xhtml</from-view-id>
+		<from-view-id>/pb/b.xhtml</from-view-id>
 		<navigation-case>
 			<from-outcome>continue</from-outcome>
-			<to-view-id>pb/c.xhtml</to-view-id>
+			<to-view-id>/pb/c.xhtml</to-view-id>
 		</navigation-case>
 	</navigation-rule>
 	<navigation-rule>
-		<from-view-id>pb/c.xhtml</from-view-id>
+		<from-view-id>/pb/c.xhtml</from-view-id>
 		<navigation-case>
 			<from-outcome>continue</from-outcome>
-			<to-view-id>pb/victory.xhtml</to-view-id>
+			<to-view-id>/pb/victory.xhtml</to-view-id>
 		</navigation-case>
 	</navigation-rule>
 </faces-config>

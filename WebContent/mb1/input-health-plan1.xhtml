@@ -10,15 +10,19 @@
 	<h:form>
 		<div>
 			<h:outputLabel>Type your name: </h:outputLabel>
-			<h:inputText value="#{inputYourData.firstName}" />
+			<h:inputText value="#{planController1.employeeName}" />
 		</div>
 		<div>
-			<h:outputLabel>Type your surname</h:outputLabel>
-			<h:inputText value="#{inputYourData.lastName}" />
+			<h:outputLabel>Type your ID: </h:outputLabel>
+			<h:inputText value="#{planController1.employeeId}" />
 		</div>
 		<div>
-			<h:commandButton value="Send Information"
-				action="#{inputYourData.showName}"></h:commandButton>
+			<h:outputLabel>Type the Health Plan you desire: </h:outputLabel>
+			<h:inputText value="#{planController1.healthPlanName}" />
+		</div>
+		<div>
+			<h:commandButton value="Send Registration Request"
+				action="#{planController1.sendYourRequest}"></h:commandButton>
 		</div>
 	</h:form>
 </h:body>
