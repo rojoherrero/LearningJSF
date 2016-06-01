@@ -4,7 +4,36 @@
 	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee 
 						http://xmlns.jcp.org/xml/ns/javaee/web-facesconfig_2_2.xsd"
 	version="2.2">
-	<!-- Health Plan v2 -->
+
+	<!-- MB2 Name Selection v2 -->
+	<managed-bean>
+		<managed-bean-name>nameSelection2</managed-bean-name>
+		<managed-bean-class>org.rojoherrero.learnjsf.controller.mb2.NameSelectionController2</managed-bean-class>
+		<managed-bean-scope>request</managed-bean-scope>
+	</managed-bean>
+
+	<!-- MB2 Name Selection v1 & v2 -->
+	<managed-bean>
+		<managed-bean-name>namesList</managed-bean-name>
+		<managed-bean-class>org.rojoherrero.learnjsf.model.entities.mb2.NamesOptions</managed-bean-class>
+		<managed-bean-scope>application</managed-bean-scope>
+	</managed-bean>
+
+	<!-- MB2 Name Selection v1 -->
+	<managed-bean>
+		<managed-bean-name>nameSelection1</managed-bean-name>
+		<managed-bean-class>org.rojoherrero.learnjsf.controller.mb2.NameSelectionController1</managed-bean-class>
+		<managed-bean-scope>request</managed-bean-scope>
+	</managed-bean>
+	<navigation-rule>
+		<from-view-id>/mb2/name-selection1.xhtml</from-view-id>
+		<navigation-case>
+			<from-outcome>renderName</from-outcome>
+			<to-view-id>/mb2/name-output1.xhtml</to-view-id>
+		</navigation-case>
+	</navigation-rule>
+
+	<!-- MB1 Health Plan v2 -->
 	<managed-bean>
 		<managed-bean-name>planController2</managed-bean-name>
 		<managed-bean-class>org.rojoherrero.learnjsf.controller.mb1.HealthPlanController2</managed-bean-class>
@@ -26,7 +55,7 @@
 		</navigation-case>
 	</navigation-rule>
 
-	<!-- Health Plan v1 -->
+	<!-- MB1 Health Plan v1 -->
 	<managed-bean>
 		<managed-bean-name>planController1</managed-bean-name>
 		<managed-bean-class>org.rojoherrero.learnjsf.controller.mb1.HealthPlanController1</managed-bean-class>
@@ -44,7 +73,7 @@
 		</navigation-case>
 	</navigation-rule>
 
-	<!-- Name registering configuration -->
+	<!-- PB Name registering configuration -->
 	<managed-bean>
 		<managed-bean-name>inputYourData</managed-bean-name>
 		<managed-bean-class>org.rojoherrero.learnjsf.controller.pb.NameController</managed-bean-class>
@@ -62,7 +91,7 @@
 		</navigation-case>
 	</navigation-rule>
 
-	<!-- Flip Coin configuration -->
+	<!-- PB Flip Coin configuration -->
 	<managed-bean>
 		<managed-bean-name>luckGameController</managed-bean-name>
 		<managed-bean-class>org.rojoherrero.learnjsf.controller.pb.FlipController</managed-bean-class>

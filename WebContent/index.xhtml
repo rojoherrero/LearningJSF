@@ -8,6 +8,12 @@
 </h:head>
 <h:body>
 	<h1>Hello and Wellcome</h1>
+	<p>Here are the exercises I did to learn JSF</p>
+	<p>
+		I'm follow the wonderful tutorial available on <a
+			href="http://www.coreservlets.com/JSF-Tutorial/jsf2/">JSF 2 with
+			Facelets, Ajax, and PrimeFaces</a>
+	</p>
 	<div>
 		<h2>Programming Baics</h2>
 		<p>These to exercise are "doped", because I use methods teached in
@@ -76,6 +82,36 @@
 	</div>
 	<div>
 		<h2>Manage Beans II</h2>
+		<div>
+			<h3>Exercise 3</h3>
+			<p>Make an app where you select one of three names (Cay, David,
+				Marty) and show the selection in the results page. Use a listbox or
+				set of radio buttons, not a dropdown menu. Be sure there is an
+				initial selection.</p>
+			<p>
+				<h:form>
+					<h:commandButton value="Name Selection v1"
+						action="/mb2/name-selection1" />
+				</h:form>
+			</p>
+		</div>
+		<div>
+			<h3>Exercise 4</h3>
+			<div>
+				Make a similar app, but with two differences
+				<ul>
+					<li>Use a dropdown menu</li>
+					<li>Select among Cay, David, and Marty, but for the results,
+						show one of Cay Horstmann, David Geary, or Marty Hall.</li>
+				</ul>
+			</div>
+			<p>
+				<h:form>
+					<h:commandButton value="Name Selection v2"
+						action="/mb2/name-selection2" />
+				</h:form>
+			</p>
+		</div>
 	</div>
 </h:body>
 </html>
