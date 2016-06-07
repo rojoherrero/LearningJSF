@@ -4,7 +4,7 @@ import java.util.ArrayList;
 
 import org.rojoherrero.learnjsf.model.entities.mb1.HealthPlan;
 
-public class HealthPlanFInderImpl implements HealthPlanFinder {
+public class HealthPlanFinderImpl implements HealthPlanFinder {
 
 	ArrayList<HealthPlan> availablePlans = new ArrayList<HealthPlan>() {
 		private static final long serialVersionUID = 2950652453024414171L;

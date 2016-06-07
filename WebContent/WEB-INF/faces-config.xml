@@ -5,6 +5,29 @@
 						http://xmlns.jcp.org/xml/ns/javaee/web-facesconfig_2_2.xsd"
 	version="2.2">
 
+	<!-- MB2 Health Plan with lists menus -->
+	<managed-bean>
+		<managed-bean-name>listAvailabelPlans</managed-bean-name>
+		<managed-bean-class>org.rojoherrero.learnjsf.model.entities.mb2.PlansOptions</managed-bean-class>
+		<managed-bean-scope>application</managed-bean-scope>
+	</managed-bean>
+	<managed-bean>
+		<managed-bean-name>planSelector</managed-bean-name>
+		<managed-bean-class>org.rojoherrero.learnjsf.controller.mb2.HealthPlanController</managed-bean-class>
+		<managed-bean-scope>request</managed-bean-scope>
+	</managed-bean>
+	<navigation-rule>
+		<from-view-id>/mb2/healthplan-input.xhtml</from-view-id>
+		<navigation-case>
+			<from-outcome>success</from-outcome>
+			<to-view-id>/mb2/healthplan-output.xhtml</to-view-id>
+		</navigation-case>
+		<navigation-case>
+			<from-outcome>uncomplete</from-outcome>
+			<to-view-id>/mb2/wrong-info.xhtml</to-view-id>
+		</navigation-case>
+	</navigation-rule>
+
 	<!-- MB2 Name Selection v2 -->
 	<managed-bean>
 		<managed-bean-name>nameSelection2</managed-bean-name>
@@ -42,7 +65,7 @@
 	<navigation-rule>
 		<from-view-id>/mb1/input-health-plan2.xhtml</from-view-id>
 		<navigation-case>
-			<from-outcome>valid</from-outcome>
+			<from-outcome>success</from-outcome>
 			<to-view-id>/mb1/success2.xhtml</to-view-id>
 		</navigation-case>
 		<navigation-case>

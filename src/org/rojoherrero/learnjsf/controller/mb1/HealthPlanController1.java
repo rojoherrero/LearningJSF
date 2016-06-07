@@ -2,9 +2,7 @@ package org.rojoherrero.learnjsf.controller.mb1;
 
 public class HealthPlanController1 {
 
-	protected String employeeName;
-	protected String employeeId;
-	protected String healthPlanName;
+	protected String employeeName, employeeId, healthPlanName;
 
 	public String getEmployeeName() {
 		return employeeName;
