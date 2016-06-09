@@ -3,7 +3,6 @@ body {
 	background-color: #000000;
 	margin: 0;
 	color: #ffffff;
-	
 }
 
 body a {
@@ -12,6 +11,11 @@ body a {
 
 div {
 	margin: 0;
+}
+
+.button-contaner {
+	padding-bottom: 0.5%;
+	padding-top: 0.5%;
 }
 
 .lesson:nth-of-type(odd) {
@@ -28,4 +32,5 @@ div {
 
 .exercise:nth-of-type(even) {
 	background-color: yellow;
+	color: black;
 }
