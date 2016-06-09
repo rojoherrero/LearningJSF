@@ -7,6 +7,16 @@
 
 	<!-- MB3 Exercise 1 -->
 	<managed-bean>
+		<managed-bean-name>availableColors</managed-bean-name>
+		<managed-bean-class>org.rojoherrero.learnjsf.mb3.model.entities.ColorOptions</managed-bean-class>
+		<managed-bean-scope>session</managed-bean-scope>
+	</managed-bean>
+	<managed-bean>
+		<managed-bean-name>choosenColor</managed-bean-name>
+		<managed-bean-class>org.rojoherrero.learnjsf.mb3.controller.ColorSelection</managed-bean-class>
+		<managed-bean-scope>session</managed-bean-scope>
+	</managed-bean>
+	<managed-bean>
 		<managed-bean-name>gameControllerMB3</managed-bean-name>
 		<managed-bean-class>org.rojoherrero.learnjsf.mb3.controller.FlipController</managed-bean-class>
 		<managed-bean-scope>request</managed-bean-scope>
