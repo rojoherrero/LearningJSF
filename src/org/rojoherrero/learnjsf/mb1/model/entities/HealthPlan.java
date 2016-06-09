@@ -1,4 +1,4 @@
-package org.rojoherrero.learnjsf.model.entities.mb1;
+package org.rojoherrero.learnjsf.mb1.model.entities;
 
 public class HealthPlan {
 

@@ -1,0 +1,31 @@
+body {
+	text-align: center;
+	background-color: #000000;
+	margin: 0;
+	color: #ffffff;
+	
+}
+
+body a {
+	color: red;
+}
+
+div {
+	margin: 0;
+}
+
+.lesson:nth-of-type(odd) {
+	background: #cccccc;
+}
+
+.lesson:nth-of-type(even) {
+	background: #e0e0e0;
+}
+
+.exercise:nth-of-type(odd) {
+	background-color: red;
+}
+
+.exercise:nth-of-type(even) {
+	background-color: yellow;
+}

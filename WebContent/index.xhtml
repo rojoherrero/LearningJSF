@@ -3,130 +3,165 @@
 <html xmlns="http://www.w3.org/1999/xhtml"
 	xmlns:h="http://xmlns.jcp.org/jsf/html">
 <h:head>
+	<meta name="Author" content="Sergio Rojo Herrero" />
+	<meta name="Description"
+		content="This is my project to learn JSF following the magnificient tutorial availble on http://www.coreservlets.com/" />
+	<meta name="keywords"
+		content="Java, Java EE, JEE, J2EE, FOSS, FLOSS, Tomcat, Eclipse" />
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-	<title>Insert title here</title>
+	<link rel="stylesheet" href="./css/main.css" type="text/css" />
+	<title>My Way to Learn JSF</title>
 </h:head>
 <h:body>
-	<h1>Hello and Wellcome</h1>
-	<p>Here are the exercises I did to learn JSF</p>
-	<p>
-		I'm follow the wonderful tutorial available on <a
-			href="http://www.coreservlets.com/JSF-Tutorial/jsf2/">JSF 2 with
-			Facelets, Ajax, and PrimeFaces</a>
-	</p>
-	<div>
-		<h2>Programming Baics</h2>
-		<p>These to exercise are "doped", because I use methods teached in
-			following lessons</p>
-		<div>
-			<h3>Exercise 1</h3>
-			<p>Implement the following navigation fl ow. You start at a.jsf,
-				press a button, and randomly get either b.jsf or defeat.jsf. From
-				page b, after pressing a button you randomly get c.jsf or
-				defeat.jsf. From page c, after pressing a button you randomly get vi
-				ctory.jsf or defeat.jsf.</p>
-			<p>
-				<h:form>
-					<h:commandButton value="Go to the Game" action="/pb/a" />
-				</h:form>
-			</p>
-		</div>
-		<div>
-			<h3>Exercise 2</h3>
-			<p>Make a page that collects a first name and a last name. If
-				either the first or last name is missing (i.e., an empty string),
-				show an error page. If both the names are there, go to a results
-				page</p>
-			<p>
-				<h:form>
-					<h:commandButton value="Go to the Registering Name"
-						action="/pb/name-input" />
-				</h:form>
-			</p>
-		</div>
+	<div class="header">
+		<h1>Hello and Wellcome</h1>
+		<p>Here are the exercises I did to learn JSF</p>
+		<p>
+			I'm follow the wonderful tutorial available on <a
+				href="http://www.coreservlets.com/JSF-Tutorial/jsf2/"
+				title="Link to the tutorial homepage" >JSF 2 with Facelets, Ajax,
+				and PrimeFaces</a>
+		</p>
 	</div>
-	<div>
-		<h2>Manage Beans I</h2>
-		<div>
-			<h3>Exercise 1</h3>
-			<p>Make a form to gather an employee name, employee ID, and the
-				name of a health plan to sign up for. If all three values are
-				present (i.e., are something other than empty strings), display a
-				confirmation page that says “You are registered for the health plan”
-				and that shows the name, ID, and health plan. If any of the inputs
-				are missing, display a page that says “Missing Input Data”.</p>
-			<p>
-				<h:form>
-					<h:commandButton value="Health Plan v1"
-						action="/mb1/input-health-plan1.xhtml" />
-				</h:form>
-			</p>
-		</div>
-		<div>
-			<h3>Exercise 2</h3>
-			<p>Make a new form that works similarly to the old one. This
-				time, however, verify that the health plan entered is really one of
-				the available health plans. Give an error message (e.g., “CMS Prime
-				is not an available health plan”) for unknown health plans. In the
-				confirmation page, also show the monthly premium and contact phone
-				number for that health plan (in addition to the data shown earlier).
-				This requirement means that you need some simple business logic to
-				map a health plan name to a HealthPlan object.</p>
-			<p>
-				<h:form>
-					<h:commandButton value="Health Plan v2"
-						action="/mb1/input-health-plan2" />
-				</h:form>
-			</p>
-		</div>
-	</div>
-	<div>
-		<h2>Manage Beans II</h2>
-		<div>
-			<h3>Exercise 3</h3>
-			<p>Make an app where you select one of three names (Cay, David,
-				Marty) and show the selection in the results page. Use a listbox or
-				set of radio buttons, not a dropdown menu. Be sure there is an
-				initial selection.</p>
-			<p>
-				<h:form>
-					<h:commandButton value="Name Selection v1"
-						action="/mb2/name-selection1" />
-				</h:form>
-			</p>
-		</div>
-		<div>
-			<h3>Exercise 4</h3>
-			<div>
-				<p>Make a similar app, but with two differences</p>
-				<ul>
-					<li>Use a dropdown menu</li>
-					<li>Select among Cay, David, and Marty, but for the results,
-						show one of Cay Horstmann, David Geary, or Marty Hall.</li>
-				</ul>
+	<div class="content">
+		<div class="lesson">
+			<h2>Programming Baics</h2>
+			<p>These to exercise are "doped", because I use methods teached
+				in following lessons</p>
+			<div class="exercise">
+				<h3>Exercise 1</h3>
+				<p>Implement the following navigation fl ow. You start at a.jsf,
+					press a button, and randomly get either b.jsf or defeat.jsf. From
+					page b, after pressing a button you randomly get c.jsf or
+					defeat.jsf. From page c, after pressing a button you randomly get
+					vi ctory.jsf or defeat.jsf.</p>
+				<p>
+					<h:form>
+						<h:commandButton value="Go to the Game" action="/pb/a" />
+					</h:form>
+				</p>
 			</div>
-			<p>
-				<h:form>
-					<h:commandButton value="Name Selection v2"
-						action="/mb2/name-selection2" />
-				</h:form>
-			</p>
-		</div>
-		<div>
-			<h3>Exercise 5</h3>
-			<h4>Not yet finished</h4>
-			<div>
-				<p>Copy your code for the health plan from the previous set of
-					exercises. However, instead of using a textfield for the health
-					care provider, provide a drop down menu that shows a list of the
-					available options.</p>
+			<div class="exercise">
+				<h3>Exercise 2</h3>
+				<p>Make a page that collects a first name and a last name. If
+					either the first or last name is missing (i.e., an empty string),
+					show an error page. If both the names are there, go to a results
+					page</p>
+				<p>
+					<h:form>
+						<h:commandButton value="Go to the Registering Name"
+							action="/pb/name-input" />
+					</h:form>
+				</p>
 			</div>
-			<p>
+		</div>
+		<div class="lesson">
+			<h2>Manage Beans I</h2>
+			<div class="exercise">
+				<h3>Exercise 1</h3>
+				<p>Make a form to gather an employee name, employee ID, and the
+					name of a health plan to sign up for. If all three values are
+					present (i.e., are something other than empty strings), display a
+					confirmation page that says “You are registered for the health
+					plan” and that shows the name, ID, and health plan. If any of the
+					inputs are missing, display a page that says “Missing Input Data”.</p>
+				<p>
+					<h:form>
+						<h:commandButton value="Health Plan v1"
+							action="/mb1/input-health-plan1.xhtml" />
+					</h:form>
+				</p>
+			</div>
+			<div class="exercise">
+				<h3>Exercise 2</h3>
+				<p>Make a new form that works similarly to the old one. This
+					time, however, verify that the health plan entered is really one of
+					the available health plans. Give an error message (e.g., “CMS Prime
+					is not an available health plan”) for unknown health plans. In the
+					confirmation page, also show the monthly premium and contact phone
+					number for that health plan (in addition to the data shown
+					earlier). This requirement means that you need some simple business
+					logic to map a health plan name to a HealthPlan object.</p>
+				<p>
+					<h:form>
+						<h:commandButton value="Health Plan v2"
+							action="/mb1/input-health-plan2" />
+					</h:form>
+				</p>
+			</div>
+		</div>
+		<div class="lesson">
+			<h2>Manage Beans II</h2>
+			<div class="exercise">
+				<h3>Exercise 3</h3>
+				<p>Make an app where you select one of three names (Cay, David,
+					Marty) and show the selection in the results page. Use a listbox or
+					set of radio buttons, not a dropdown menu. Be sure there is an
+					initial selection.</p>
+				<p>
+					<h:form>
+						<h:commandButton value="Name Selection v1"
+							action="/mb2/name-selection1" />
+					</h:form>
+				</p>
+			</div>
+			<div class="exercise">
+				<h3>Exercise 4</h3>
+				<div>
+					<p>Make a similar app, but with two differences</p>
+					<ul>
+						<li>Use a dropdown menu</li>
+						<li>Select among Cay, David, and Marty, but for the results,
+							show one of Cay Horstmann, David Geary, or Marty Hall.</li>
+					</ul>
+				</div>
+				<p>
+					<h:form>
+						<h:commandButton value="Name Selection v2"
+							action="/mb2/name-selection2" />
+					</h:form>
+				</p>
+			</div>
+			<div class="exercise">
+				<h3>Exercise 5</h3>
+				<h4>Not yet finished</h4>
+				<div>
+					<p>Copy your code for the health plan from the previous set of
+						exercises. However, instead of using a textfield for the health
+						care provider, provide a drop down menu that shows a list of the
+						available options.</p>
+				</div>
+				<p>
+					<h:form>
+						<h:commandButton value="Health Plan with list menus"
+							action="/mb2/healthplan-input" />
+					</h:form>
+				</p>
+			</div>
+		</div>
+		<div class="lesson">
+			<h2>Manage Beans III</h2>
+			<div class="exercise">
+				<h3>Exercise 1</h3>
+				<p>Make a form that collects a preferred fo reground and
+					background color. Display all of the pages in the
+					a-b-c-victory-defeat a pp in those colors. Ig nore empty strings,
+					and don’t let the foreground and background colors be the same.</p>
 				<h:form>
-					<h:commandButton value="Health Plan with list menus"
-						action="/mb2/healthplan-input" />
+					<h:commandButton value="Let's go" action="/mb3/a" />
 				</h:form>
-			</p>
+			</div>
+			<div class="exercise">
+				<h3>Exercise 2</h3>
+				<p>Make a form that collects a search query and randomly shows
+					either the Google results (https://www.google.co m/#q=blah) or the
+					Bing results (http://www.bing.com/ search?q=blah).</p>
+				<!-- 
+			<h:form>
+				<h:commandButton value="Let's go" action="" />
+			</h:form>
+			 -->
+			</div>
 		</div>
 	</div>
 </h:body>

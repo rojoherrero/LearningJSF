@@ -1,8 +1,8 @@
-package org.rojoherrero.learnjsf.controller.mb1;
+package org.rojoherrero.learnjsf.mb1.controller;
 
-import org.rojoherrero.learnjsf.model.bussiness.mb1.HealthPlanFinderImpl;
-import org.rojoherrero.learnjsf.model.bussiness.mb1.HealthPlanFinder;
-import org.rojoherrero.learnjsf.model.entities.mb1.HealthPlan;
+import org.rojoherrero.learnjsf.mb1.model.bussiness.HealthPlanFinder;
+import org.rojoherrero.learnjsf.mb1.model.bussiness.HealthPlanFinderImpl;
+import org.rojoherrero.learnjsf.mb1.model.entities.HealthPlan;
 
 public class HealthPlanController2 extends HealthPlanController1 {
 

@@ -1,4 +1,4 @@
-package org.rojoherrero.learnjsf.controller.mb1;
+package org.rojoherrero.learnjsf.mb1.controller;
 
 public class HealthPlanController1 {
 

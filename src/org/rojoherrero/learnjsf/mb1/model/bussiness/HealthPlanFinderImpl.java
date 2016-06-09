@@ -1,8 +1,8 @@
-package org.rojoherrero.learnjsf.model.bussiness.mb1;
+package org.rojoherrero.learnjsf.mb1.model.bussiness;
 
 import java.util.ArrayList;
 
-import org.rojoherrero.learnjsf.model.entities.mb1.HealthPlan;
+import org.rojoherrero.learnjsf.mb1.model.entities.HealthPlan;
 
 public class HealthPlanFinderImpl implements HealthPlanFinder {
 

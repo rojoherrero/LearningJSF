@@ -1,4 +1,4 @@
-package org.rojoherrero.learnjsf.controller.pb;
+package org.rojoherrero.learnjsf.mb3.controller;
 
 public class FlipController {
 

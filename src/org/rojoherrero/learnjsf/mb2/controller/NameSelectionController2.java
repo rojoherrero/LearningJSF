@@ -1,4 +1,4 @@
-package org.rojoherrero.learnjsf.controller.mb2;
+package org.rojoherrero.learnjsf.mb2.controller;
 
 public class NameSelectionController2 extends NameSelectionController1 {
 

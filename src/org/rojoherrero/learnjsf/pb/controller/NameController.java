@@ -1,4 +1,4 @@
-package org.rojoherrero.learnjsf.controller.pb;
+package org.rojoherrero.learnjsf.pb.controller;
 
 public class NameController {
 

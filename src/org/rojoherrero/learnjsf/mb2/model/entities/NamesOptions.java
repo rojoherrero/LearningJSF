@@ -1,4 +1,4 @@
-package org.rojoherrero.learnjsf.model.entities.mb2;
+package org.rojoherrero.learnjsf.mb2.model.entities;
 
 import java.util.ArrayList;
 import java.util.LinkedHashMap;
