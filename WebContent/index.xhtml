@@ -24,19 +24,25 @@
 		</p>
 	</div>
 	<div class="content">
+
+		<!--  -->
+
 		<div class="lesson">
-			<h2>Programming Baics</h2>
+			<h2>Programming Basics</h2>
 			<p>These to exercise are "doped", because I use methods teached
 				in following lessons</p>
 			<div class="exercise">
 				<h3>Exercise 1</h3>
-				<p>Implement the following navigation fl ow. You start at a.jsf,
-					press a button, and randomly get either b.jsf or defeat.jsf. From
-					page b, after pressing a button you randomly get c.jsf or
-					defeat.jsf. From page c, after pressing a button you randomly get
-					vi ctory.jsf or defeat.jsf.</p>
-				<div class="button-contaner">
-					<h:link value="Let's go to the Game" outcome="/pb/a" />
+				<div class="description">
+					<p>Implement the following navigation flow. You start at a.jsf,
+						press a button, and randomly get either b.jsf or defeat.jsf. From
+						page b, after pressing a button you randomly get c.jsf or
+						defeat.jsf. From page c, after pressing a button you randomly get
+						vi ctory.jsf or defeat.jsf.</p>
+				</div>
+				<div class="link-div-contaner">
+					<h:link outcome="/pb/a" value="Let's go to the Game"
+						styleClass="exercise-link" />
 				</div>
 			</div>
 			<div class="exercise">
@@ -45,11 +51,15 @@
 					either the first or last name is missing (i.e., an empty string),
 					show an error page. If both the names are there, go to a results
 					page</p>
-				<div class="button-contaner">
-					<h:link outcome="/pb/name-input" value="Go to the Registering Name" />
+				<div class="link-div-contaner">
+					<h:link outcome="/pb/name-input" value="Go to the Registering Name"
+						styleClass="exercise-link" />
 				</div>
 			</div>
 		</div>
+
+		<!--  -->
+
 		<div class="lesson">
 			<h2>Manage Beans I</h2>
 			<div class="exercise">
@@ -60,8 +70,9 @@
 					confirmation page that says “You are registered for the health
 					plan” and that shows the name, ID, and health plan. If any of the
 					inputs are missing, display a page that says “Missing Input Data”.</p>
-				<div class="button-contaner">
-					<h:link value="Health Plan v1" outcome="/mb1/input-health-plan1" />
+				<div class="link-div-contaner">
+					<h:link value="Health Plan v1" outcome="/mb1/input-health-plan1"
+						styleClass="exercise-link" />
 				</div>
 			</div>
 			<div class="exercise">
@@ -74,11 +85,15 @@
 					number for that health plan (in addition to the data shown
 					earlier). This requirement means that you need some simple business
 					logic to map a health plan name to a HealthPlan object.</p>
-				<div class="button-contaner">
-					<h:link outcome="/mb1/input-health-plan2" value="Health Plan v2" />
+				<div class="link-div-contaner">
+					<h:link outcome="/mb1/input-health-plan2" value="Health Plan v2"
+						styleClass="exercise-link" />
 				</div>
 			</div>
 		</div>
+
+		<!--  -->
+
 		<div class="lesson">
 			<h2>Manage Beans II</h2>
 			<div class="exercise">
@@ -87,8 +102,9 @@
 					Marty) and show the selection in the results page. Use a listbox or
 					set of radio buttons, not a dropdown menu. Be sure there is an
 					initial selection.</p>
-				<div class="button-contaner">
-					<h:link outcome="/mb2/name-selection1" value="Name Selection v1" />
+				<div class="link-div-contaner">
+					<h:link outcome="/mb2/name-selection1" value="Name Selection v1"
+						styleClass="exercise-link" />
 				</div>
 			</div>
 			<div class="exercise">
@@ -101,8 +117,10 @@
 							show one of Cay Horstmann, David Geary, or Marty Hall.</li>
 					</ul>
 				</div>
-				<div class="button-contaner">
-					<h:link outcome="/mb2/name-selection2" value="Name Selection v2" />
+				<div class="link-div-contaner">
+					<div class="link-div">
+						<h:link outcome="/mb2/name-selection2" value="Name Selection v2" />
+					</div>
 				</div>
 			</div>
 			<div class="exercise">
@@ -114,12 +132,17 @@
 						care provider, provide a drop down menu that shows a list of the
 						available options.</p>
 				</div>
-				<div class="button-contaner">
-					<h:link outcome="/mb2/healthplan-input"
-						value="Health Plan with list menus" />
+				<div class="link-div-contaner">
+					<div class="link-div">
+						<h:link outcome="/mb2/healthplan-input"
+							value="Health Plan with list menus" />
+					</div>
 				</div>
 			</div>
 		</div>
+
+		<!--  -->
+
 		<div class="lesson">
 			<h2>Manage Beans III</h2>
 			<div class="exercise">
@@ -128,8 +151,10 @@
 					background color. Display all of the pages in the
 					a-b-c-victory-defeat a pp in those colors. Ig nore empty strings,
 					and don’t let the foreground and background colors be the same.</p>
-				<div class="button-contaner">
-					<h:link outcome="/mb3/color-selection" value="Let's go" />
+				<div class="link-div-contaner">
+					<div class="link-div">
+						<h:link outcome="/mb3/color-selection" value="Let's go" />
+					</div>
 				</div>
 			</div>
 			<div class="exercise">
@@ -137,11 +162,14 @@
 				<p>Make a form that collects a search query and randomly shows
 					either the Google results (https://www.google.co m/#q=blah) or the
 					Bing results (http://www.bing.com/ search?q=blah).</p>
-				<div class="button-contaner">
-					<h:link outcome="/mb3/search-form" value="Let's go" />
+				<div class="link-div-contaner">
+					<div class="link-div">
+						<h:link outcome="/mb3/search-form" value="Let's go" />
+					</div>
 				</div>
 			</div>
 		</div>
+		<!--  -->
 	</div>
 </h:body>
 </html>
