@@ -1,68 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <PROCESS model-entity="JSFProcess">
- <PROCESS-ITEM NAME="rules:#mb3#*" PATH="/mb3/*" SHAPE="32,17,0,0" model-entity="JSFProcessGroup">
-  <PROCESS-ITEM ID="rules:#mb3#*:0" NAME="item" PATH="/mb3/*" model-entity="JSFProcessItem">
-   <PROCESS-ITEM-OUTPUT ID="stop::#mb3#defeat.xhtml" NAME="output"
-    PATH="/mb3/defeat.xhtml" TARGET="rules:#mb3#defeat.xhtml"
-    TITLE="stop" model-entity="JSFProcessItemOutput"/>
-  </PROCESS-ITEM>
- </PROCESS-ITEM>
- <PROCESS-ITEM NAME="rules:#mb3#a.xhtml" PATH="/mb3/a.xhtml"
-  SHAPE="32,129,0,0" model-entity="JSFProcessGroup">
-  <PROCESS-ITEM ID="rules:#mb3#a.xhtml:0" NAME="item"
-   PATH="/mb3/a.xhtml" model-entity="JSFProcessItem">
-   <PROCESS-ITEM-OUTPUT ID="continue::#mb3#b.xhtml" NAME="output"
-    PATH="/mb3/b.xhtml" TARGET="rules:#mb3#b.xhtml" TITLE="continue" model-entity="JSFProcessItemOutput"/>
-  </PROCESS-ITEM>
- </PROCESS-ITEM>
- <PROCESS-ITEM NAME="rules:#mb3#b.xhtml" PATH="/mb3/b.xhtml"
-  SHAPE="240,145,0,0" model-entity="JSFProcessGroup">
-  <PROCESS-ITEM ID="rules:#mb3#b.xhtml:0" NAME="item"
-   PATH="/mb3/b.xhtml" model-entity="JSFProcessItem">
-   <PROCESS-ITEM-OUTPUT ID="continue::#mb3#c.xhtml" NAME="output"
-    PATH="/mb3/c.xhtml" TARGET="rules:#mb3#c.xhtml" TITLE="continue" model-entity="JSFProcessItemOutput"/>
-  </PROCESS-ITEM>
- </PROCESS-ITEM>
- <PROCESS-ITEM NAME="rules:#mb3#c.xhtml" PATH="/mb3/c.xhtml"
-  SHAPE="448,129,0,0" model-entity="JSFProcessGroup">
-  <PROCESS-ITEM ID="rules:#mb3#c.xhtml:0" NAME="item"
-   PATH="/mb3/c.xhtml" model-entity="JSFProcessItem">
-   <PROCESS-ITEM-OUTPUT ID="continue::#mb3#victory.xhtml" NAME="output"
-    PATH="/mb3/victory.xhtml" TARGET="rules:#mb3#victory.xhtml"
-    TITLE="continue" model-entity="JSFProcessItemOutput"/>
-  </PROCESS-ITEM>
- </PROCESS-ITEM>
- <PROCESS-ITEM NAME="rules:#mb2#healthplan-input.xhtml"
-  PATH="/mb2/healthplan-input.xhtml" SHAPE="32,241,0,0" model-entity="JSFProcessGroup">
-  <PROCESS-ITEM ID="rules:#mb2#healthplan-input.xhtml:0" NAME="item"
-   PATH="/mb2/healthplan-input.xhtml" model-entity="JSFProcessItem">
-   <PROCESS-ITEM-OUTPUT ID="success::#mb2#healthplan-output.xhtml"
-    NAME="output" PATH="/mb2/healthplan-output.xhtml"
-    TARGET="rules:#mb2#healthplan-output.xhtml" TITLE="success" model-entity="JSFProcessItemOutput"/>
-   <PROCESS-ITEM-OUTPUT ID="uncomplete::#mb2#wrong-info.xhtml"
-    NAME="output1" PATH="/mb2/wrong-info.xhtml"
-    TARGET="rules:#mb2#wrong-info.xhtml" TITLE="uncomplete" model-entity="JSFProcessItemOutput"/>
-  </PROCESS-ITEM>
- </PROCESS-ITEM>
- <PROCESS-ITEM NAME="rules:#mb2#name-selection1.xhtml"
-  PATH="/mb2/name-selection1.xhtml" SHAPE="32,497,0,0" model-entity="JSFProcessGroup">
-  <PROCESS-ITEM ID="rules:#mb2#name-selection1.xhtml:0" NAME="item"
-   PATH="/mb2/name-selection1.xhtml" model-entity="JSFProcessItem">
-   <PROCESS-ITEM-OUTPUT ID="renderName::#mb2#name-output1.xhtml"
-    NAME="output" PATH="/mb2/name-output1.xhtml"
-    TARGET="rules:#mb2#name-output1.xhtml" TITLE="renderName" model-entity="JSFProcessItemOutput"/>
-  </PROCESS-ITEM>
- </PROCESS-ITEM>
- <PROCESS-ITEM NAME="rules:#mb2#name-output1.xhtml"
-  PATH="/mb2/name-output1.xhtml" SHAPE="240,513,0,0" model-entity="JSFProcessGroup"/>
- <PROCESS-ITEM NAME="rules:#mb3#defeat.xhtml" PATH="/mb3/defeat.xhtml"
-  SHAPE="240,33,0,0" model-entity="JSFProcessGroup"/>
- <PROCESS-ITEM NAME="rules:#mb2#wrong-info.xhtml"
-  PATH="/mb2/wrong-info.xhtml" SHAPE="256,401,0,0" model-entity="JSFProcessGroup"/>
- <PROCESS-ITEM NAME="rules:#mb2#healthplan-output.xhtml"
-  PATH="/mb2/healthplan-output.xhtml" SHAPE="256,257,0,0" model-entity="JSFProcessGroup"/>
- <PROCESS-ITEM NAME="rules:#mb3#victory.xhtml" PATH="/mb3/victory.xhtml"
-  SHAPE="656,145,0,0" model-entity="JSFProcessGroup"/>
  <PROCESS-ITEM NAME="rules:#xhtml#pb#name-input.xhtml"
   PATH="/xhtml/pb/name-input.xhtml" SHAPE="32,1377,0,0" model-entity="JSFProcessGroup">
   <PROCESS-ITEM ID="rules:#xhtml#pb#name-input.xhtml:0" NAME="item"
@@ -157,4 +94,71 @@
   PATH="/xhtmlmb1/non-success2.xhtml" SHAPE="272,2177,0,0" model-entity="JSFProcessGroup"/>
  <PROCESS-ITEM NAME="rules:#xhtml#mb1#non-success1.xhtml"
   PATH="/xhtml/mb1/non-success1.xhtml" SHAPE="256,2433,0,0" model-entity="JSFProcessGroup"/>
+ <PROCESS-ITEM NAME="rules:#xhtml#mb3#*" PATH="/xhtml/mb3/*"
+  SHAPE="32,609,0,0" model-entity="JSFProcessGroup">
+  <PROCESS-ITEM ID="rules:#xhtml#mb3#*:0" NAME="item"
+   PATH="/xhtml/mb3/*" model-entity="JSFProcessItem">
+   <PROCESS-ITEM-OUTPUT ID="stop::#xhtml#mb3#defeat.xhtml" NAME="output"
+    PATH="/xhtml/mb3/defeat.xhtml"
+    TARGET="rules:#xhtml#mb3#defeat.xhtml" TITLE="stop" model-entity="JSFProcessItemOutput"/>
+  </PROCESS-ITEM>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM NAME="rules:#xhtml#mb3#a.xhtml" PATH="/xhtml/mb3/a.xhtml"
+  SHAPE="32,2721,0,0" model-entity="JSFProcessGroup">
+  <PROCESS-ITEM ID="rules:#xhtml#mb3#a.xhtml:0" NAME="item"
+   PATH="/xhtml/mb3/a.xhtml" model-entity="JSFProcessItem">
+   <PROCESS-ITEM-OUTPUT ID="continue::#xhtml#mb3#b.xhtml" NAME="output"
+    PATH="/xhtml/mb3/b.xhtml" TARGET="rules:#xhtml#mb3#b.xhtml"
+    TITLE="continue" model-entity="JSFProcessItemOutput"/>
+  </PROCESS-ITEM>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM NAME="rules:#xhtml#mb3#b.xhtml" PATH="/xhtml/mb3/b.xhtml"
+  SHAPE="240,2737,0,0" model-entity="JSFProcessGroup">
+  <PROCESS-ITEM ID="rules:#xhtml#mb3#b.xhtml:0" NAME="item"
+   PATH="/xhtml/mb3/b.xhtml" model-entity="JSFProcessItem">
+   <PROCESS-ITEM-OUTPUT ID="continue::#xhtml#mb3#c.xhtml" NAME="output"
+    PATH="/xhtml/mb3/c.xhtml" TARGET="rules:#xhtml#mb3#c.xhtml"
+    TITLE="continue" model-entity="JSFProcessItemOutput"/>
+  </PROCESS-ITEM>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM NAME="rules:#xhtml#mb3#c.xhtml" PATH="/xhtml/mb3/c.xhtml"
+  SHAPE="448,2721,0,0" model-entity="JSFProcessGroup">
+  <PROCESS-ITEM ID="rules:#xhtml#mb3#c.xhtml:0" NAME="item"
+   PATH="/xhtml/mb3/c.xhtml" model-entity="JSFProcessItem">
+   <PROCESS-ITEM-OUTPUT ID="continue::#xhtml#mb3#victory.xhtml"
+    NAME="output" PATH="/xhtml/mb3/victory.xhtml"
+    TARGET="rules:#xhtml#mb3#victory.xhtml" TITLE="continue" model-entity="JSFProcessItemOutput"/>
+  </PROCESS-ITEM>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM NAME="rules:#xhtml#mb2#healthplan-input.xhtml"
+  PATH="/xhtml/mb2/healthplan-input.xhtml" SHAPE="32,2833,0,0" model-entity="JSFProcessGroup">
+  <PROCESS-ITEM ID="rules:#xhtml#mb2#healthplan-input.xhtml:0"
+   NAME="item" PATH="/xhtml/mb2/healthplan-input.xhtml" model-entity="JSFProcessItem">
+   <PROCESS-ITEM-OUTPUT ID="success::#xhtml#mb2#healthplan-output.xhtml"
+    NAME="output" PATH="/xhtml/mb2/healthplan-output.xhtml"
+    TARGET="rules:#xhtml#mb2#healthplan-output.xhtml" TITLE="success" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT ID="uncomplete::#xhtml#mb2#wrong-info.xhtml"
+    NAME="output1" PATH="/xhtml/mb2/wrong-info.xhtml"
+    TARGET="rules:#xhtml#mb2#wrong-info.xhtml" TITLE="uncomplete" model-entity="JSFProcessItemOutput"/>
+  </PROCESS-ITEM>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM NAME="rules:#xhtml#mb2#name-selection1.xhtml"
+  PATH="/xhtml/mb2/name-selection1.xhtml" SHAPE="32,3089,0,0" model-entity="JSFProcessGroup">
+  <PROCESS-ITEM ID="rules:#xhtml#mb2#name-selection1.xhtml:0"
+   NAME="item" PATH="/xhtml/mb2/name-selection1.xhtml" model-entity="JSFProcessItem">
+   <PROCESS-ITEM-OUTPUT ID="renderName::#xhtml#mb2#name-output1.xhtml"
+    NAME="output" PATH="/xhtml/mb2/name-output1.xhtml"
+    TARGET="rules:#xhtml#mb2#name-output1.xhtml" TITLE="renderName" model-entity="JSFProcessItemOutput"/>
+  </PROCESS-ITEM>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM NAME="rules:#xhtml#mb2#wrong-info.xhtml"
+  PATH="/xhtml/mb2/wrong-info.xhtml" SHAPE="256,2993,0,0" model-entity="JSFProcessGroup"/>
+ <PROCESS-ITEM NAME="rules:#xhtml#mb2#name-output1.xhtml"
+  PATH="/xhtml/mb2/name-output1.xhtml" SHAPE="240,3105,0,0" model-entity="JSFProcessGroup"/>
+ <PROCESS-ITEM NAME="rules:#xhtml#mb2#healthplan-output.xhtml"
+  PATH="/xhtml/mb2/healthplan-output.xhtml" SHAPE="256,2849,0,0" model-entity="JSFProcessGroup"/>
+ <PROCESS-ITEM NAME="rules:#xhtml#mb3#defeat.xhtml"
+  PATH="/xhtml/mb3/defeat.xhtml" SHAPE="240,2625,0,0" model-entity="JSFProcessGroup"/>
+ <PROCESS-ITEM NAME="rules:#xhtml#mb3#victory.xhtml"
+  PATH="/xhtml/mb3/victory.xhtml" SHAPE="656,2737,0,0" model-entity="JSFProcessGroup"/>
 </PROCESS>

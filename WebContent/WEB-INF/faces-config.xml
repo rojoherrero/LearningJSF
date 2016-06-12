@@ -22,31 +22,31 @@
 		<managed-bean-scope>request</managed-bean-scope>
 	</managed-bean>
 	<navigation-rule>
-		<from-view-id>/mb3/*</from-view-id>
+		<from-view-id>/xhtml/mb3/*</from-view-id>
 		<navigation-case>
 			<from-outcome>stop</from-outcome>
-			<to-view-id>/mb3/defeat.xhtml</to-view-id>
+			<to-view-id>/xhtml/mb3/defeat.xhtml</to-view-id>
 		</navigation-case>
 	</navigation-rule>
 	<navigation-rule>
-		<from-view-id>/mb3/a.xhtml</from-view-id>
+		<from-view-id>/xhtml/mb3/a.xhtml</from-view-id>
 		<navigation-case>
 			<from-outcome>continue</from-outcome>
-			<to-view-id>/mb3/b.xhtml</to-view-id>
+			<to-view-id>/xhtml/mb3/b.xhtml</to-view-id>
 		</navigation-case>
 	</navigation-rule>
 	<navigation-rule>
-		<from-view-id>/mb3/b.xhtml</from-view-id>
+		<from-view-id>/xhtml/mb3/b.xhtml</from-view-id>
 		<navigation-case>
 			<from-outcome>continue</from-outcome>
-			<to-view-id>/mb3/c.xhtml</to-view-id>
+			<to-view-id>/xhtml/mb3/c.xhtml</to-view-id>
 		</navigation-case>
 	</navigation-rule>
 	<navigation-rule>
-		<from-view-id>/mb3/c.xhtml</from-view-id>
+		<from-view-id>/xhtml/mb3/c.xhtml</from-view-id>
 		<navigation-case>
 			<from-outcome>continue</from-outcome>
-			<to-view-id>/mb3/victory.xhtml</to-view-id>
+			<to-view-id>/xhtml/mb3/victory.xhtml</to-view-id>
 		</navigation-case>
 	</navigation-rule>
 
@@ -62,14 +62,14 @@
 		<managed-bean-scope>request</managed-bean-scope>
 	</managed-bean>
 	<navigation-rule>
-		<from-view-id>/mb2/healthplan-input.xhtml</from-view-id>
+		<from-view-id>/xhtml/mb2/healthplan-input.xhtml</from-view-id>
 		<navigation-case>
 			<from-outcome>success</from-outcome>
-			<to-view-id>/mb2/healthplan-output.xhtml</to-view-id>
+			<to-view-id>/xhtml/mb2/healthplan-output.xhtml</to-view-id>
 		</navigation-case>
 		<navigation-case>
 			<from-outcome>uncomplete</from-outcome>
-			<to-view-id>/mb2/wrong-info.xhtml</to-view-id>
+			<to-view-id>/xhtml/mb2/wrong-info.xhtml</to-view-id>
 		</navigation-case>
 	</navigation-rule>
 
@@ -94,10 +94,10 @@
 		<managed-bean-scope>request</managed-bean-scope>
 	</managed-bean>
 	<navigation-rule>
-		<from-view-id>/mb2/name-selection1.xhtml</from-view-id>
+		<from-view-id>/xhtml/mb2/name-selection1.xhtml</from-view-id>
 		<navigation-case>
 			<from-outcome>renderName</from-outcome>
-			<to-view-id>/mb2/name-output1.xhtml</to-view-id>
+			<to-view-id>/xhtml/mb2/name-output1.xhtml</to-view-id>
 		</navigation-case>
 	</navigation-rule>
 
