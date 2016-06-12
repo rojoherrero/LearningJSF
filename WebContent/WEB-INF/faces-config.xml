@@ -108,18 +108,18 @@
 		<managed-bean-scope>request</managed-bean-scope>
 	</managed-bean>
 	<navigation-rule>
-		<from-view-id>/mb1/input-health-plan2.xhtml</from-view-id>
+		<from-view-id>/xhtml/mb1/input-health-plan2.xhtml</from-view-id>
 		<navigation-case>
 			<from-outcome>success</from-outcome>
-			<to-view-id>mb1/success2.xhtml</to-view-id>
+			<to-view-id>/xhtmlmb1/success2.xhtml</to-view-id>
 		</navigation-case>
 		<navigation-case>
 			<from-outcome>uncomplete-info</from-outcome>
-			<to-view-id>/mb1/uncomplete-info.xhtml</to-view-id>
+			<to-view-id>/xhtml/mb1/uncomplete-info.xhtml</to-view-id>
 		</navigation-case>
 		<navigation-case>
 			<from-outcome>unknowPlan</from-outcome>
-			<to-view-id>mb1/non-success2.xhtml</to-view-id>
+			<to-view-id>/xhtmlmb1/non-success2.xhtml</to-view-id>
 		</navigation-case>
 	</navigation-rule>
 
@@ -130,14 +130,14 @@
 		<managed-bean-scope>request</managed-bean-scope>
 	</managed-bean>
 	<navigation-rule>
-		<from-view-id>/mb1/input-health-plan1.xhtml</from-view-id>
+		<from-view-id>/xhtml/mb1/input-health-plan1.xhtml</from-view-id>
 		<navigation-case>
 			<from-outcome>valid</from-outcome>
-			<to-view-id>/mb1/success1.xhtml</to-view-id>
+			<to-view-id>/xhtml/mb1/success1.xhtml</to-view-id>
 		</navigation-case>
 		<navigation-case>
 			<from-outcome>nonValid</from-outcome>
-			<to-view-id>/mb1/non-success1.xhtml</to-view-id>
+			<to-view-id>/xhtml/mb1/non-success1.xhtml</to-view-id>
 		</navigation-case>
 	</navigation-rule>
 
