@@ -5,20 +5,37 @@ body {
 	color: #ffffff;
 }
 
-body a {
+.header a {
 	color: green;
+}
+
+.js-test-zone {
+	
+}
+
+.header a:HOVER {
+	color: aqua;
 }
 
 div {
 	margin: 0;
+	padding-top: 0.5%;
+	padding-bottom: 0.5%;
 }
 
 .exercise-link {
 	color: white;
 	background-color: black;
+	padding: 0.5%;
 }
 
-.button-contaner {
+.exercise-link:hover {
+	color: black;
+	background-color: white;
+	padding: 0.5%;
+}
+
+link-div-contaner {
 	padding-bottom: 0.5%;
 	padding-top: 0.5%;
 }

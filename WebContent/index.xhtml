@@ -10,6 +10,9 @@
 		content="Java, Java EE, JEE, J2EE, FOSS, FLOSS, Tomcat, Eclipse" />
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 	<link rel="stylesheet" href="./css/main.css" type="text/css" />
+	<script
+		src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+	<script src="/css/main.js" type="text/javascript" />
 	<title>My Way to Learn JSF</title>
 </h:head>
 <h:body>
@@ -23,6 +26,15 @@
 				and PrimeFaces</a>
 		</p>
 	</div>
+
+	<div class="js-test-zone">
+		<button id="timebutton" onclick="semana()">Show me today date</button>
+		<div class="today-info">
+			<div id="date"></div>
+			<div id="time"></div>
+		</div>
+	</div>
+
 	<div class="content">
 
 		<!--  -->
@@ -41,7 +53,7 @@
 						vi ctory.jsf or defeat.jsf.</p>
 				</div>
 				<div class="link-div-contaner">
-					<h:link outcome="/pb/a" value="Let's go to the Game"
+					<h:link outcome="/xhtml/pb/a" value="Let's go to the Game"
 						styleClass="exercise-link" />
 				</div>
 			</div>
@@ -52,7 +64,7 @@
 					show an error page. If both the names are there, go to a results
 					page</p>
 				<div class="link-div-contaner">
-					<h:link outcome="/pb/name-input" value="Go to the Registering Name"
+					<h:link outcome="xhtml/pb/name-input" value="Go to the Registering Name"
 						styleClass="exercise-link" />
 				</div>
 			</div>
@@ -118,9 +130,8 @@
 					</ul>
 				</div>
 				<div class="link-div-contaner">
-					<div class="link-div">
-						<h:link outcome="/mb2/name-selection2" value="Name Selection v2" />
-					</div>
+					<h:link outcome="/mb2/name-selection2" value="Name Selection v2"
+						styleClass="exercise-link" />
 				</div>
 			</div>
 			<div class="exercise">
@@ -133,10 +144,8 @@
 						available options.</p>
 				</div>
 				<div class="link-div-contaner">
-					<div class="link-div">
-						<h:link outcome="/mb2/healthplan-input"
-							value="Health Plan with list menus" />
-					</div>
+					<h:link outcome="/mb2/healthplan-input"
+						value="Health Plan with list menus" styleClass="exercise-link" />
 				</div>
 			</div>
 		</div>
@@ -152,9 +161,8 @@
 					a-b-c-victory-defeat a pp in those colors. Ig nore empty strings,
 					and don’t let the foreground and background colors be the same.</p>
 				<div class="link-div-contaner">
-					<div class="link-div">
-						<h:link outcome="/mb3/color-selection" value="Let's go" />
-					</div>
+					<h:link outcome="/mb3/color-selection" value="Let's go"
+						styleClass="exercise-link" />
 				</div>
 			</div>
 			<div class="exercise">
@@ -163,9 +171,8 @@
 					either the Google results (https://www.google.co m/#q=blah) or the
 					Bing results (http://www.bing.com/ search?q=blah).</p>
 				<div class="link-div-contaner">
-					<div class="link-div">
-						<h:link outcome="/mb3/search-form" value="Let's go" />
-					</div>
+					<h:link outcome="/mb3/search-form" value="Let's go"
+						styleClass="exercise-link" />
 				</div>
 			</div>
 		</div>

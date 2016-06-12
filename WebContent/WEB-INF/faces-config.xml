@@ -148,14 +148,14 @@
 		<managed-bean-scope>request</managed-bean-scope>
 	</managed-bean>
 	<navigation-rule>
-		<from-view-id>/pb/name-input.xhtml</from-view-id>
+		<from-view-id>/xhtml/pb/name-input.xhtml</from-view-id>
 		<navigation-case>
 			<from-outcome>goodInput</from-outcome>
-			<to-view-id>/pb/name-output.xhtml</to-view-id>
+			<to-view-id>/xhtml/pb/name-output.xhtml</to-view-id>
 		</navigation-case>
 		<navigation-case>
 			<from-outcome>badInput</from-outcome>
-			<to-view-id>/pb/wrong-input.xhtml</to-view-id>
+			<to-view-id>/xhtml/pb/wrong-input.xhtml</to-view-id>
 		</navigation-case>
 	</navigation-rule>
 
@@ -166,31 +166,31 @@
 		<managed-bean-scope>request</managed-bean-scope>
 	</managed-bean>
 	<navigation-rule>
-		<from-view-id>/pb/*</from-view-id>
+		<from-view-id>/xhtml/pb/*</from-view-id>
 		<navigation-case>
 			<from-outcome>stop</from-outcome>
-			<to-view-id>/pb/defeat.xhtml</to-view-id>
+			<to-view-id>/xhtml/pb/defeat.xhtml</to-view-id>
 		</navigation-case>
 	</navigation-rule>
 	<navigation-rule>
-		<from-view-id>/pb/a.xhtml</from-view-id>
+		<from-view-id>/xhtml/pb/a.xhtml</from-view-id>
 		<navigation-case>
 			<from-outcome>continue</from-outcome>
-			<to-view-id>/pb/b.xhtml</to-view-id>
+			<to-view-id>/xhtml/pb/b.xhtml</to-view-id>
 		</navigation-case>
 	</navigation-rule>
 	<navigation-rule>
-		<from-view-id>/pb/b.xhtml</from-view-id>
+		<from-view-id>/xhtml/pb/b.xhtml</from-view-id>
 		<navigation-case>
 			<from-outcome>continue</from-outcome>
-			<to-view-id>/pb/c.xhtml</to-view-id>
+			<to-view-id>/xhtml/pb/c.xhtml</to-view-id>
 		</navigation-case>
 	</navigation-rule>
 	<navigation-rule>
-		<from-view-id>/pb/c.xhtml</from-view-id>
+		<from-view-id>/xhtml/pb/c.xhtml</from-view-id>
 		<navigation-case>
 			<from-outcome>continue</from-outcome>
-			<to-view-id>/pb/victory.xhtml</to-view-id>
+			<to-view-id>/xhtml/pb/victory.xhtml</to-view-id>
 		</navigation-case>
 	</navigation-rule>
 </faces-config>
