@@ -7,6 +7,11 @@
 	<title>Insert title here</title>
 </h:head>
 <h:body>
-	<h1>Just a TEST</h1>
+	<h:form>
+		<h:outputLabel>Type down your query: </h:outputLabel>
+		<h:inputText value="#{searchBean.searchString}" />
+		<h:commandButton action="#{searchBean.search}"
+			value="Let's do a web search"></h:commandButton>
+	</h:form>
 </h:body>
 </html>
