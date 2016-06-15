@@ -5,6 +5,27 @@
 						http://xmlns.jcp.org/xml/ns/javaee/web-facesconfig_2_2.xsd"
 	version="2.2">
 
+	<!-- EL Exercise 4 -->
+	<managed-bean>
+		<managed-bean-name>numbersBean</managed-bean-name>
+		<managed-bean-class>org.rojoherrero.learnjsf.el.controller.NumbersController</managed-bean-class>
+		<managed-bean-scope>session</managed-bean-scope>
+	</managed-bean>
+
+	<!-- EL Exercise 3 -->
+	<managed-bean>
+		<managed-bean-name>employeeBean</managed-bean-name>
+		<managed-bean-class>org.rojoherrero.learnjsf.el.controller.CompanyController</managed-bean-class>
+		<managed-bean-scope>session</managed-bean-scope>
+	</managed-bean>
+
+	<!-- EL Exercise 1 & 2 -->
+	<managed-bean>
+		<managed-bean-name>colorBean</managed-bean-name>
+		<managed-bean-class>org.rojoherrero.learnjsf.el.controller.ColorController</managed-bean-class>
+		<managed-bean-scope>session</managed-bean-scope>
+	</managed-bean>
+
 	<!-- MB3 Exercise 2 -->
 	<managed-bean>
 		<managed-bean-name>searchBean</managed-bean-name>
