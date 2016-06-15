@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<faces-config xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee 
+						http://xmlns.jcp.org/xml/ns/javaee/web-facesconfig_2_2.xsd"
+	version="2.2">
+
+	<!-- EL Exercise 4 -->
+	<managed-bean>
+		<managed-bean-name>numbersBean</managed-bean-name>
+		<managed-bean-class>org.rojoherrero.learnjsf.el.controller.NumbersController</managed-bean-class>
+		<managed-bean-scope>session</managed-bean-scope>
+	</managed-bean>
+
+	<!-- EL Exercise 3 -->
+	<managed-bean>
+		<managed-bean-name>employeeBean</managed-bean-name>
+		<managed-bean-class>org.rojoherrero.learnjsf.el.controller.CompanyController</managed-bean-class>
+		<managed-bean-scope>session</managed-bean-scope>
+	</managed-bean>
+
+	<!-- EL Exercise 1 & 2 -->
+	<managed-bean>
+		<managed-bean-name>colorBean</managed-bean-name>
+		<managed-bean-class>org.rojoherrero.learnjsf.el.controller.ColorController</managed-bean-class>
+		<managed-bean-scope>session</managed-bean-scope>
+	</managed-bean>
+
+	<!-- MB3 Exercise 2 -->
+	<managed-bean>
+		<managed-bean-name>searchBean</managed-bean-name>
+		<managed-bean-class>org.rojoherrero.learnjsf.mb3.controller.SearchController</managed-bean-class>
+		<managed-bean-scope>session</managed-bean-scope>
+	</managed-bean>
+
+	<!-- MB3 Exercise 1 -->
+	<managed-bean>
+		<managed-bean-name>availableColors</managed-bean-name>
+		<managed-bean-class>org.rojoherrero.learnjsf.mb3.model.entities.ColorOptions</managed-bean-class>
+		<managed-bean-scope>session</managed-bean-scope>
+	</managed-bean>
+	<managed-bean>
+		<managed-bean-name>choosenColor</managed-bean-name>
+		<managed-bean-class>org.rojoherrero.learnjsf.mb3.controller.ColorSelection</managed-bean-class>
+		<managed-bean-scope>session</managed-bean-scope>
+	</managed-bean>
+	<managed-bean>
+		<managed-bean-name>gameControllerMB3</managed-bean-name>
+		<managed-bean-class>org.rojoherrero.learnjsf.mb3.controller.FlipController</managed-bean-class>
+		<managed-bean-scope>request</managed-bean-scope>
+	</managed-bean>
+	
+
+	<!-- MB2 Health Plan with lists menus -->
+	<managed-bean>
+		<managed-bean-name>listAvailabelPlans</managed-bean-name>
+		<managed-bean-class>org.rojoherrero.learnjsf.mb2.model.entities.PlansOptions</managed-bean-class>
+		<managed-bean-scope>application</managed-bean-scope>
+	</managed-bean>
+	<managed-bean>
+		<managed-bean-name>planSelector</managed-bean-name>
+		<managed-bean-class>org.rojoherrero.learnjsf.mb2.controller.HealthPlanController</managed-bean-class>
+		<managed-bean-scope>request</managed-bean-scope>
+	</managed-bean>
+	
+
+	<!-- MB2 Name Selection v2 -->
+	<managed-bean>
+		<managed-bean-name>nameSelection2</managed-bean-name>
+		<managed-bean-class>org.rojoherrero.learnjsf.mb2.controller.NameSelectionController2</managed-bean-class>
+		<managed-bean-scope>request</managed-bean-scope>
+	</managed-bean>
+
+	<!-- MB2 Name Selection v1 & v2 -->
+	<managed-bean>
+		<managed-bean-name>namesList</managed-bean-name>
+		<managed-bean-class>org.rojoherrero.learnjsf.mb2.model.entities.NamesOptions</managed-bean-class>
+		<managed-bean-scope>application</managed-bean-scope>
+	</managed-bean>
+
+	<!-- MB2 Name Selection v1 -->
+	<managed-bean>
+		<managed-bean-name>nameSelection1</managed-bean-name>
+		<managed-bean-class>org.rojoherrero.learnjsf.mb2.controller.NameSelectionController1</managed-bean-class>
+		<managed-bean-scope>request</managed-bean-scope>
+	</managed-bean>
+	
+
+	<!-- MB1 Health Plan v2 -->
+	<managed-bean>
+		<managed-bean-name>planController2</managed-bean-name>
+		<managed-bean-class>org.rojoherrero.learnjsf.mb1.controller.HealthPlanController2</managed-bean-class>
+		<managed-bean-scope>request</managed-bean-scope>
+	</managed-bean>
+	
+
+	<!-- MB1 Health Plan v1 -->
+	<managed-bean>
+		<managed-bean-name>planController1</managed-bean-name>
+		<managed-bean-class>org.rojoherrero.learnjsf.mb1.controller.HealthPlanController1</managed-bean-class>
+		<managed-bean-scope>request</managed-bean-scope>
+	</managed-bean>
+	
+
+	<!-- PB Name registering configuration -->
+	<managed-bean>
+		<managed-bean-name>inputYourData</managed-bean-name>
+		<managed-bean-class>org.rojoherrero.learnjsf.pb.controller.NameController</managed-bean-class>
+		<managed-bean-scope>request</managed-bean-scope>
+	</managed-bean>
+	
+
+	<!-- PB Flip Coin configuration -->
+	<managed-bean>
+		<managed-bean-name>luckGameController</managed-bean-name>
+		<managed-bean-class>org.rojoherrero.learnjsf.pb.controller.FlipController</managed-bean-class>
+		<managed-bean-scope>request</managed-bean-scope>
+	</managed-bean>
+	
+</faces-config>

@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<faces-config xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee 
+						http://xmlns.jcp.org/xml/ns/javaee/web-facesconfig_2_2.xsd"
+	version="2.2">
+
+	<!-- MB3 Exercise 1 -->
+	<navigation-rule>
+		<from-view-id>/xhtml/mb3/*</from-view-id>
+		<navigation-case>
+			<from-outcome>stop</from-outcome>
+			<to-view-id>/xhtml/mb3/defeat.xhtml</to-view-id>
+		</navigation-case>
+	</navigation-rule>
+	<navigation-rule>
+		<from-view-id>/xhtml/mb3/a.xhtml</from-view-id>
+		<navigation-case>
+			<from-outcome>continue</from-outcome>
+			<to-view-id>/xhtml/mb3/b.xhtml</to-view-id>
+		</navigation-case>
+	</navigation-rule>
+	<navigation-rule>
+		<from-view-id>/xhtml/mb3/b.xhtml</from-view-id>
+		<navigation-case>
+			<from-outcome>continue</from-outcome>
+			<to-view-id>/xhtml/mb3/c.xhtml</to-view-id>
+		</navigation-case>
+	</navigation-rule>
+	<navigation-rule>
+		<from-view-id>/xhtml/mb3/c.xhtml</from-view-id>
+		<navigation-case>
+			<from-outcome>continue</from-outcome>
+			<to-view-id>/xhtml/mb3/victory.xhtml</to-view-id>
+		</navigation-case>
+	</navigation-rule>
+
+	<!-- MB2 Health Plan with lists menus -->
+	<navigation-rule>
+		<from-view-id>/xhtml/mb2/healthplan-input.xhtml</from-view-id>
+		<navigation-case>
+			<from-outcome>success</from-outcome>
+			<to-view-id>/xhtml/mb2/healthplan-output.xhtml</to-view-id>
+		</navigation-case>
+		<navigation-case>
+			<from-outcome>uncomplete</from-outcome>
+			<to-view-id>/xhtml/mb2/wrong-info.xhtml</to-view-id>
+		</navigation-case>
+	</navigation-rule>
+
+	<!-- MB2 Name Selection v1 -->
+	<navigation-rule>
+		<from-view-id>/xhtml/mb2/name-selection1.xhtml</from-view-id>
+		<navigation-case>
+			<from-outcome>renderName</from-outcome>
+			<to-view-id>/xhtml/mb2/name-output1.xhtml</to-view-id>
+		</navigation-case>
+	</navigation-rule>
+
+	<!-- MB1 Health Plan v2 -->
+	<navigation-rule>
+		<from-view-id>/xhtml/mb1/input-health-plan2.xhtml</from-view-id>
+		<navigation-case>
+			<from-outcome>success</from-outcome>
+			<to-view-id>/xhtmlmb1/success2.xhtml</to-view-id>
+		</navigation-case>
+		<navigation-case>
+			<from-outcome>uncomplete-info</from-outcome>
+			<to-view-id>/xhtml/mb1/uncomplete-info.xhtml</to-view-id>
+		</navigation-case>
+		<navigation-case>
+			<from-outcome>unknowPlan</from-outcome>
+			<to-view-id>/xhtmlmb1/non-success2.xhtml</to-view-id>
+		</navigation-case>
+	</navigation-rule>
+
+	<!-- MB1 Health Plan v1 -->
+	<navigation-rule>
+		<from-view-id>/xhtml/mb1/input-health-plan1.xhtml</from-view-id>
+		<navigation-case>
+			<from-outcome>valid</from-outcome>
+			<to-view-id>/xhtml/mb1/success1.xhtml</to-view-id>
+		</navigation-case>
+		<navigation-case>
+			<from-outcome>nonValid</from-outcome>
+			<to-view-id>/xhtml/mb1/non-success1.xhtml</to-view-id>
+		</navigation-case>
+	</navigation-rule>
+
+	<!-- PB Name registering configuration -->
+	<navigation-rule>
+		<from-view-id>/xhtml/pb/name-input.xhtml</from-view-id>
+		<navigation-case>
+			<from-outcome>goodInput</from-outcome>
+			<to-view-id>/xhtml/pb/name-output.xhtml</to-view-id>
+		</navigation-case>
+		<navigation-case>
+			<from-outcome>badInput</from-outcome>
+			<to-view-id>/xhtml/pb/wrong-input.xhtml</to-view-id>
+		</navigation-case>
+	</navigation-rule>
+
+	<!-- PB Flip Coin configuration -->
+	<navigation-rule>
+		<from-view-id>/xhtml/pb/*</from-view-id>
+		<navigation-case>
+			<from-outcome>stop</from-outcome>
+			<to-view-id>/xhtml/pb/defeat.xhtml</to-view-id>
+		</navigation-case>
+	</navigation-rule>
+	<navigation-rule>
+		<from-view-id>/xhtml/pb/a.xhtml</from-view-id>
+		<navigation-case>
+			<from-outcome>continue</from-outcome>
+			<to-view-id>/xhtml/pb/b.xhtml</to-view-id>
+		</navigation-case>
+	</navigation-rule>
+	<navigation-rule>
+		<from-view-id>/xhtml/pb/b.xhtml</from-view-id>
+		<navigation-case>
+			<from-outcome>continue</from-outcome>
+			<to-view-id>/xhtml/pb/c.xhtml</to-view-id>
+		</navigation-case>
+	</navigation-rule>
+	<navigation-rule>
+		<from-view-id>/xhtml/pb/c.xhtml</from-view-id>
+		<navigation-case>
+			<from-outcome>continue</from-outcome>
+			<to-view-id>/xhtml/pb/victory.xhtml</to-view-id>
+		</navigation-case>
+	</navigation-rule>
+</faces-config>
