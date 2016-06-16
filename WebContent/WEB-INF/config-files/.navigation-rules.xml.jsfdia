@@ -161,4 +161,23 @@
   PATH="/xhtmlmb1/non-success2.xhtml" SHAPE="272,913,0,0" model-entity="JSFProcessGroup"/>
  <PROCESS-ITEM NAME="rules:#xhtml#mb1#non-success1.xhtml"
   PATH="/xhtml/mb1/non-success1.xhtml" SHAPE="256,1169,0,0" model-entity="JSFProcessGroup"/>
+ <PROCESS-ITEM NAME="rules:#xhtml#PF_and_I18N#info-input.xhtml"
+  PATH="/xhtml/PF_and_I18N/info-input.xhtml" SHAPE="32,1857,0,0" model-entity="JSFProcessGroup">
+  <PROCESS-ITEM ID="rules:#xhtml#PF_and_I18N#info-input.xhtml:0"
+   NAME="item" PATH="/xhtml/PF_and_I18N/info-input.xhtml" model-entity="JSFProcessItem">
+   <PROCESS-ITEM-OUTPUT
+    ID="success::#xhtml#PF_and_I18N#congratularion.xhtml" NAME="output"
+    PATH="/xhtml/PF_and_I18N/congratularion.xhtml"
+    TARGET="rules:#xhtml#PF_and_I18N#congratularion.xhtml"
+    TITLE="success" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT
+    ID="uncomplete::#xhtml#PF_and_I18N#failure.xhtml" NAME="output1"
+    PATH="/xhtml/PF_and_I18N/failure.xhtml"
+    TARGET="rules:#xhtml#PF_and_I18N#failure.xhtml" TITLE="uncomplete" model-entity="JSFProcessItemOutput"/>
+  </PROCESS-ITEM>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM NAME="rules:#xhtml#PF_and_I18N#congratularion.xhtml"
+  PATH="/xhtml/PF_and_I18N/congratularion.xhtml" SHAPE="256,1985,0,0" model-entity="JSFProcessGroup"/>
+ <PROCESS-ITEM NAME="rules:#xhtml#PF_and_I18N#failure.xhtml"
+  PATH="/xhtml/PF_and_I18N/failure.xhtml" SHAPE="256,1985,0,0" model-entity="JSFProcessGroup"/>
 </PROCESS>

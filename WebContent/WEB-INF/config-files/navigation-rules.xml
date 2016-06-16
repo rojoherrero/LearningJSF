@@ -4,6 +4,19 @@
 	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee 
 						http://xmlns.jcp.org/xml/ns/javaee/web-facesconfig_2_2.xsd"
 	version="2.2">
+	
+	<!-- PF Exercise 1 -->
+	<navigation-rule>
+		<from-view-id>/xhtml/PF_and_I18N/info-input.xhtml</from-view-id>
+		<navigation-case>
+			<from-outcome>success</from-outcome>
+			<to-view-id>/xhtml/PF_and_I18N/congratularion.xhtml</to-view-id>
+		</navigation-case>
+		<navigation-case>
+			<from-outcome>uncomplete</from-outcome>
+			<to-view-id>/xhtml/PF_and_I18N/failure.xhtml</to-view-id>
+		</navigation-case>
+	</navigation-rule>
 
 	<!-- MB3 Exercise 1 -->
 	<navigation-rule>

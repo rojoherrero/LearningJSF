@@ -4,6 +4,13 @@
 	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee 
 						http://xmlns.jcp.org/xml/ns/javaee/web-facesconfig_2_2.xsd"
 	version="2.2">
+	
+	<!-- PF Exercise 1 -->
+	<managed-bean>
+		<managed-bean-name>personBean</managed-bean-name>
+		<managed-bean-class>org.rojoherrero.learnjsf.pf.controller.Person</managed-bean-class>
+		<managed-bean-scope>session</managed-bean-scope>
+	</managed-bean>
 
 	<!-- EL Exercise 4 -->
 	<managed-bean>
